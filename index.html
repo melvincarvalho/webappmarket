@@ -133,7 +133,7 @@
 
 
           <table style="	border-collapse: separate; border-spacing: 30px; ">
-            <tr ng-repeat="n in apps" ng-hide="$index%3">
+            <tr ng-repeat="n in apps" ng-hide="$index%4">
               <td>
                 <img ng-show="apps[$index+0].icon" height="48" width="48" ng-src="{{apps[$index+0].icon}}"/>
                 <div ng-show="apps[$index+0].name"><a href="{{apps[$index+0].homepage}}">{{apps[$index+0].name}}</a></div>
@@ -145,6 +145,10 @@
               <td>
                 <img ng-show="apps[$index+2].icon" height="48" width="48" ng-src="{{apps[$index+2].icon}}"/>
                 <div ng-show="apps[$index+2].name"><a href="{{apps[$index+2].homepage}}">{{apps[$index+2].name}}</a></div>
+              </td>
+              <td>
+                <img ng-show="apps[$index+3].icon" height="48" width="48" ng-src="{{apps[$index+3].icon}}"/>
+                <div ng-show="apps[$index+3].name"><a href="{{apps[$index+3].homepage}}">{{apps[$index+3].name}}</a></div>
               </td>
             </tr>
           </table>
