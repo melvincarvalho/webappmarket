@@ -98,6 +98,8 @@ App.controller('Main', function($scope, $http, $location, $timeout, $sce, ngAudi
         configurations: true,
     };
 
+    fetchAll();
+
   };
 
   /**
@@ -105,8 +107,9 @@ App.controller('Main', function($scope, $http, $location, $timeout, $sce, ngAudi
    */
   $scope.initUI = function() {
     $scope.initialized = true;
-    $scope.loggedIn = false;
+    $scope.loggedIn = true;
     $scope.loginTLSButtonText = "Login";
+    $scope.user = 'http://public.databox.me/card#me';
     $scope.audio = ngAudio.load('audio/button-3.mp3');
   };
 
@@ -280,7 +283,7 @@ App.controller('Main', function($scope, $http, $location, $timeout, $sce, ngAudi
     addToQueue($scope.queue, $scope.user);
 
     for (i=0; i<$scope.seeds.length; i++) {
-      addToQueue($scope.queue, $scope.seeds[i]);      
+      addToQueue($scope.queue, $scope.seeds[i]);
     }
 
     workspaces = g.statementsMatching($rdf.sym($scope.user), PIM('storage'), undefined);

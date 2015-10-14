@@ -29,10 +29,10 @@
   <div class="welcome row grad-bg" ng-hide="loggedIn">
     <div class="absolute-center tc-white-1">
       <div class="welcome-title">
-        <span class="icon icon--xl icon--flat mdi mdi-cursor-pointer tc-white-1"></span>
-        <span class="app-name fs-display-2">webappmarket</span>
+        <span class="icon icon--xl icon--flat mdi mdi-apps tc-white-1"></span>
+        <span class="app-name fs-display-2">App Market</span>
       </div>
-      <div class="mt fs-subhead">webappmarket</div>
+      <div class="mt fs-subhead">Web App Market</div>
       <div><button ng-audio="audio/button-3.mp3" class="btn btn--xl  bgc-blue-200 btn--raised" lx-ripple aria-label="Login" ng-click="TLSlogin()">
         <span>{{loginTLSButtonText}}</span>
       </button></div>
@@ -58,8 +58,7 @@
             <lx-dropdown-menu>
               <ul>
                 <li><a ng-click="openDialog('about')" class="dropdown-link">About</a></li>
-                <li><a ng-click="refresh()" class="dropdown-link">Refresh</a></li>
-                <li><a ng-click="logout()" class="dropdown-link">Logout</a></li>
+                <li><a href="https://linkeddata.github.io/signup/?tab=signup" target="_blank" class="dropdown-link">Register</a></li>
               </ul>
             </lx-dropdown-menu>
           </lx-dropdown>
