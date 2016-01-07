@@ -245,6 +245,9 @@ App.controller('Main', function($scope, $http, $location, $timeout, $sce, ngAudi
    */
   $scope.refresh = function() {
     console.log('refresh');
+    for (var i = 0; i < $scope.seeds.length; i++) {
+      $scope.invalidate($scope.seeds[i]);
+    }
     $scope.render();
   };
 
