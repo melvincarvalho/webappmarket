@@ -109,7 +109,7 @@ App.controller('Main', function($scope, $http, $location, $timeout, $sce, ngAudi
     $scope.initialized = true;
     $scope.loggedIn = true;
     $scope.loginTLSButtonText = "Login";
-    $scope.user = 'http://public.databox.me/card#me';
+    $scope.user = 'https://public.databox.me/card#me';
     $scope.audio = ngAudio.load('audio/button-3.mp3');
   };
 
